@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(pngtree-electronic-technology-website-texture-background-banner-image_156039.jpg)}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7bed9f;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-size: 30px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+    font-size: 24px;
+}
+.loksewa{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 900;
+}
+.start{
+    margin-top: 50px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown li {
+    margin: 0;
+}
+
+.dropdown a {
+    padding: 10px 20px;
+    display: block;
+}
+
+.nav-links li:hover .dropdown {
+    display: block;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+    #quiz-container {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+.home-container, .quiz-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    font-size: 100px;
+}
+
+.start-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+
+    
+}
+.Test {
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    
+}
+.start {
+    margin-top: 10px;
+    font-size: 70px;
+    font-weight: 600;
+
+}
+
+
+.start-btn:hover, .back-btn:hover, #submit:hover {
+    background-color: #0056b3;
+}
+
+
+/* Contact page */
+
+
+.contact-form-container {
+    background-color: #d8cdcd;
+    opacity: 0.7;
+    margin-top: 100px;
+    margin-left: 450px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    justify-content: center;
+    width: 400px;
+}
+
+.contact-form-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.contact-form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form-container button:hover {
+    background-color: #218838;
+}
+
+#form-messages {
+    margin-top: 20px;
+    text-align: center;
+}
